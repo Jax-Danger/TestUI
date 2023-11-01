@@ -1,0 +1,26 @@
+/* Make the box red */
+.box {
+    width: 500px;
+    height: 250px;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    box-sizing: border-box;
+
+    /* Add these lines */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Add these lines for flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    align-self: center;
+    position: absolute; /* or relative, fixed, sticky */
+    top: 220px; /* move down - increase to move further down */
+    right: 200px; /* move left - increase to move further left */
+}
